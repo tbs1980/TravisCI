@@ -1,0 +1,13 @@
+language: cpp
+
+compiler:
+    - gcc
+
+before_install:
+    - echo $LANG
+
+before_script: cmake CMakeLists.txt
+
+script:
+    - $CXX --version
+    - make
